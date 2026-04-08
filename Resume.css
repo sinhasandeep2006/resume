@@ -1,219 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-        /* === base + your exact rules integrated & harmonized === */
-        body {
-            margin: 0;
-            padding: 0;
-            font-size: 0.9rem;
-            font-family: 'Segoe UI', 'Roboto', Helvetica, Arial, sans-serif;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 0.9rem;
+}
 
-        .Resume {
-           
-            background: white;
-            padding: 1vh 5vw;
-          
-        }
+.Sm_Bold {
+    margin-bottom: -8px;
+}
 
-        /* header composite */
-        .Resume_Head {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 2rem;
-            padding-bottom:1.5rem;
-        }
+.course_work {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: -16px;
+}
 
-        .Resume_Name {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            font-weight: 900;
-            letter-spacing: 1px;
-            color: #0c1c33;
-            line-height: 1;
-            bottom: 3rem;
-        }
+.Resume,
+.Resume_Head,
+.Resume_Body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: -webkit-fill-available;
+}
 
-        .Resume_Contact {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.2rem 1.5rem;
-            align-items: center;
-            color: #1e3a5f;
-            margin-top: 0.2rem;
-        }
+.Resume_Body,
+.Resume_Head {
+    flex: 1;
+}
+
+.Resume {
+    padding: 1vh 5vw;
+}
+
+.Exp {
+    margin: 2.5px 0;
+}
+
 hr {
-            width: 100%;
-            border: none;
-            border-top: 3px solid hsl(0, 0%, 7%);
-        }
-        .Resume_Contact a, .Resume_Contact div {
-            color: #1d3b6f;
-            text-decoration: none;
-            border-bottom: 1px dotted transparent;
-        }
-        .Resume_Contact a:hover {
-            /* border-bottom: 1px dotted #070707; */
-        }
-        .Section_Head {
-            font-family: 'Roboto', serif;
-            font-size: 1rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            margin-top: 0.5rem;
-            color: #000000f0;
-            margin-bottom: 0rem;
-        }
+    background-color: black;
+    height: 2.5px;
+}
 
-        
+.Section {
+    width: 100%;
+}
 
-        /* utility classes */
-        .Sep {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            flex-wrap: wrap;
-        }
+.Resume_Name {
+    font-size: 2rem;
+    font-weight: 700;
+}
 
-        .S_Bold {
-            font-weight: 600;
-            font-size: 1rem;
-            color: #000;
-        }
-        .S_underBold{
-            font-weight: 700;
-            font-size: 0.8rem;
-            color: #000;
-        }
+.Sep {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5px 0;
+}
 
-        .Sm_Bold {
-            font-weight: 400;
-            color: #0d0d0e;
-            margin: 0.2rem 0 0.2rem;
-        }
+.S_Bold {
+    font-size: 1rem;
+    font-weight: 700;
+}
 
-        .Normal {
-            color: #0b0b0b;
-            font-weight: 400;
-            white-space: nowrap;
-        }
+.Section_Head {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 8px 0 0 0;
+    color: rgb(53, 52, 57);
+}
 
-        .Institute {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.3rem 1.2rem;
-            align-items: baseline;
-        }
+.Institute {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 2.5px;
+}
 
-        /* course_work — with your negative margin & bullets */
-        .course_work {
-            list-style: none;
-            margin-top: 0px;
-            margin-bottom: 5px;
-            margin-left: -1px;
-            padding-left: 0;
-        }
-        .course_work li {
-            font-size: 0.8rem;
-            /* margin-bottom: 0.15rem; */
-            list-style-type: disc;
-            margin-left: 20px;
-        }
-        .course_work span {
-            font-weight: 600;
-            color: #0b2b4a;
-        }
+.DF,
+.DFP {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
 
-        /* DF — using flex-basis 140px */
-        .DF {
-            display: flex;
-            align-items: flex-start;
-            justify-content: start;
-            gap: 0rem;
-            /* margin: 0.5rem 0 0.9rem; */
-            flex-wrap: wrap;
-        }
-        .DF .S_Bold {
-            flex-basis: 140px;
-            flex-grow: 0;
-            font-size: 1rem;
-        }
-        .Skills {
-            flex-basis: 464px;
-            flex-grow: 1;
-            line-height: 1.6;
-            color: #0d0d0d;
-        }
+.DF .S_Bold {
+    flex-basis: 140px;
+    flex-grow: 0;
+}
 
-        .DFP {
-            display: flex;
-            align-items: flex-start;
-            justify-content: start;
-            gap: 0rem;
-            flex-wrap: wrap;
-            margin: 0.4rem 0;
-        }
+.DFPE .S_Bold {
+    display: inline;
+    white-space: nowrap;
+    /* Prevent line breaks within the same element */
+}
 
-        .DFPE .S_Bold {
-            display: inline;
-            white-space: nowrap;
-        }
+.Skills {
+    flex-basis: 464px;
+    flex-grow: 1;
+    height: auto;
+}
 
-        .Exp {
-            margin: 2.5px 0;
-        }
+a {
+    margin: 0 5px;
+    text-decoration: none;
+}
 
-        ul {
-            padding-left: 1.6rem;
-            
-        }
-        li {
-            
-            line-height: 1.5;
-            color: #0b0c0c;
-        }
-        li b, li strong {
-            color: #0a0a0b;
-            font-weight: 700;
-        }
+/* Additional styling for Resume_Head */
+.Resume_Head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+}
 
-        a {
-            margin: 0 5px;
-            text-decoration: none;
-            
-            font-weight: 500;
-            border-bottom: 1px dotted #0c0c0c;
-        }
-        a:hover {
-            border-bottom: 1px solid #0a0b0b;
-        }
-
-        /* articles block */
-        .article-block {
-            margin: 1rem 0 0.2rem;
-            padding-left: -1.6rem;
-        }
-        .article-item {
-            margin-bottom: 0.5rem;
-        }
-        .article-item a {
-            font-weight: 600;
-            margin-right: 0.4rem;
-            margin-left: 0;
-        }
-
-        code {
-            background: #070808;
-            padding: 0.2rem 0.3rem;
-            border-radius: 4px;
-            font-family: 'Consolas', monospace;
-            font-size: 0.9em;
-        }
-
-        @media (max-width: 700px) {
-            .Resume { padding: 0.3rem 1.5rem; }
-            .Resume_Name { font-size: 1.5rem; }
-            .Sep { flex-direction: column; }
-            .DF .S_Bold { flex-basis: 100%; }
-        }
+.Resume_Contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
