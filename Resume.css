@@ -3,17 +3,14 @@ body {
     padding: 0;
     font-size: 0.9rem;
 }
-
 .Sm_Bold {
     margin-bottom: -8px;
 }
-
 .course_work {
     margin-top: 0px;
     margin-bottom: 5px;
     margin-left: -16px;
 }
-
 .Resume,
 .Resume_Head,
 .Resume_Body {
@@ -23,89 +20,72 @@ body {
     justify-content: flex-start;
     width: -webkit-fill-available;
 }
-
 .Resume_Body,
 .Resume_Head {
     flex: 1;
 }
-
 .Resume {
     padding: 1vh 5vw;
 }
-
 .Exp {
     margin: 2.5px 0;
 }
-
 hr {
     background-color: black;
     height: 2.5px;
 }
-
 .Section {
     width: 100%;
 }
-
 .Resume_Name {
     font-size: 2rem;
     font-weight: 700;
 }
-
 .Sep {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 1.5px 0;
 }
-
 .S_Bold {
     font-size: 1rem;
     font-weight: 700;
 }
-
 .Section_Head {
     font-size: 1.3rem;
     font-weight: 700;
     margin: 8px 0 0 0;
     color: rgb(53, 52, 57);
 }
-
 .Institute {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 2.5px;
 }
-
 .DF,
 .DFP {
     display: flex;
     align-items: flex-start;
     justify-content: start;
 }
-
 .DF .S_Bold {
     flex-basis: 140px;
     flex-grow: 0;
 }
-
 .DFPE .S_Bold {
     display: inline;
     white-space: nowrap;
-    /* Prevent line breaks within the same element */
 }
-
 .Skills {
     flex-basis: 464px;
     flex-grow: 1;
     height: auto;
 }
-
 a {
     margin: 0 5px;
     text-decoration: none;
 }
-
 /* Additional styling for Resume_Head */
 .Resume_Head {
     display: flex;
@@ -114,10 +94,71 @@ a {
     justify-content: space-between;
     width: -webkit-fill-available;
 }
-
 .Resume_Contact {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+
+/* ── RESPONSIVE ── */
+
+@media (max-width: 768px) {
+    .Resume_Head {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .Resume_Contact {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .Resume_Name {
+        font-size: 1.6rem;
+    }
+
+    .DF {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .DF .S_Bold {
+        flex-basis: auto;
+    }
+
+    .Skills {
+        flex-basis: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.82rem;
+    }
+
+    .Resume_Name {
+        font-size: 1.3rem;
+    }
+
+    .Resume_Contact {
+        gap: 4px;
+        font-size: 0.8rem;
+    }
+
+    .Sep {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    .Section_Head {
+        font-size: 1.1rem;
+    }
+
+    .S_Bold {
+        font-size: 0.9rem;
+    }
 }
